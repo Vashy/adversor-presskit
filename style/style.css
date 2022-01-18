@@ -1,0 +1,78 @@
+@import 'normalize.css';
+
+
+html {
+  max-width: 800px;
+  margin: auto;
+}
+
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+section {
+  margin-bottom: 150px;
+}
+
+a:hover {
+  color: rgb(202, 36, 36);
+  transition: 0.2s;
+}
+
+.video-gallery {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  list-style: none;
+  padding: 0;
+}
+
+.video-gallery iframe {
+  width: 560px;
+  height: 315px;
+}
+
+
+.gallery {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 25px;
+  row-gap: 25px;
+  list-style: none;
+  padding: 0;
+}
+
+.gallery li img, .video-gallery iframe {
+  max-width: 100%;
+  box-shadow: 4px 4px 24px 8px rgba(0,0,0,0.2);
+  transition: 0.3s;
+}
+
+.gallery li img:hover, .video-gallery iframe:hover {
+  box-shadow: 8px 8px 48px 8px rgba(0,0,0,0.2);
+}
+
+
+.list-with-headings {
+  list-style-type: none;
+  padding: 0;
+}
+
+.list-with-headings li {
+  margin-bottom: 20px;
+}
+
+.new-lined strong {
+  display: block;
+}
+
+
+.logo-download * {
+  display: block;
+  margin-bottom: 10px;
+}
+
+
+.bio img {
+  max-width: 100%;
+}
