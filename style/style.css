@@ -2,21 +2,42 @@
 
 
 html {
+  background-image: url("../static/background-crop.png");
+  background-color: #000;
+  background-size: cover;
+  /* background-position: center; */
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+body {
+  color: white;
   max-width: 800px;
   margin: auto;
 }
 
-body {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+h1 {
+  font-style: italic;
+  color: #FDCD11;
+  text-align: center;
 }
 
 section {
-  margin-bottom: 150px;
+  margin-bottom: 30px;
+}
+
+a {
+  color: #FDCD11;
 }
 
 a:hover {
   color: rgb(202, 36, 36);
   transition: 0.2s;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
 }
 
 .video-gallery {
@@ -52,10 +73,9 @@ a:hover {
   box-shadow: 8px 8px 48px 8px rgba(0,0,0,0.2);
 }
 
-
-.list-with-headings {
-  list-style-type: none;
-  padding: 0;
+.left {
+  display: flex;
+  justify-self: left;
 }
 
 .list-with-headings li {
